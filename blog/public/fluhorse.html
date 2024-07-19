@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fluhorse</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Fluhorse: Flutter-Based Android Malware Targets Credit Cards and 2FA Codes</h2>
+        <center><img src="./Screenshot 2024-07-18 113828.png"></center>
+        <h4>About</h4>
+        <p>Cybersecurity researchers have shared the inner workings of an Android malware family called Fluhorse . The malware we analyzed posed as a legitimate app for an electronic toll system used in Southern Asia. The malware "represents a significant shift as it incorporates the malicious components directly within the Flutter code," Fortinet FortiGuard Labs researcher Axelle Apvrille said in a report published. Fluhorse was first documented by Check Point in early May 2023, detailing its attacks on users located in East Asia through rogue apps masquerading as ETC and VPBank Neo, which are popular in Taiwan and Vietnam. The initial intrusion vector for the malware is phishing. </p>
+        <h4>How it happened :</h4>
+        <p>FluHorse attacks begin with malicious emails sent to high-profile targets, urging them to take immediate action to resolve a payment issue.
+            Usually, a link in the email directs the user to a phishing website where they can download the bogus app's APK (Android package file).
+            'ETC,' a toll-collection app used in Taiwan, and 'VPBank Neo,' a banking software used in Vietnam, are the apps that the FluHorse carrier apps imitate. On Google Play, each of these apps' legal versions has received over a million downloads. Although its name wasn't revealed in the study, Check Point has also seen malware that pretends to be a transit app that is used by 100,000 individuals.
+            When installed, all three of the bogus apps ask for SMS access so order to intercept incoming 2FA codes in case those codes are required to compromise the accounts. The analysts comment that the fake apps copy the GUI of the originals but do not feature much functionality besides two-three windows that load the forms which capture the victim's information. The apps display a "system is busy" notice for 10 minutes after obtaining the victims' account passwords and credit card information. This is probably done to make the process seem genuine while the operators secretly intercept 2FA codes and use the stolen information.
+            Malicious programmes must first be supplied to the victims' devices before they can be installed there. Email enticements are useful in this situation. Email lures are a good use of social engineering and are aligned with the alleged purpose of subsequently installed malicious APK: paying tolls. The malicious fetc-net[.]com domain is strikingly similar to the legitimate FETC corporation website, fetc.net.tw, which is used by the virus operators.
+            The malware authors added an extra degree of security to this malicious website to make sure that only victims could download the APK: it would only do so if the target's user agent matched the one they had anticipated. This check is carried out using a JavaScript client.
+            Flutter uses a custom virtual environment to support multi-platform development with a single code base. A specific programming language, called Dart, is used for the development. Analyzing the Flutter platform code gets a bit easier as it is available as an open-source project, but can still be a tedious process.
+            </p>
+            <h4>Remediation</h4>
+            <p>
+                Download software only from reputable websites, such the Google Play Store and the developer's official website. Downloading programmes from unreliable websites or third-party app shops should be avoided. Before downloading an app, look up the developer and read app reviews. Downloading programmes from unidentified developers or with poor ratings is to be avoided.
+Update the operating system and apps on your Android device with the most recent security patches and upgrades. Be careful when clicking links via emails, texts, or social media. These links may take you to websites that might infect your computer with malware.
+When granting app permissions, exercise caution. Examine the access requests made by an app and only provide access to the features required for the app to function. On your Android device, install antivirus software.
+
+            </p>
+    </body>
+</html>

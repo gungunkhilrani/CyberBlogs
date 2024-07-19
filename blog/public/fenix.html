@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fenix Cybercrime</title>
+    </head>
+    <body >
+        <h2 style="text-align: center;">Fenix Cybercrime Group Poses as Tax Authorities to Target Latin American Users</h2>
+        <center><img src="./public/Screenshot 2024-07-17 223814.png"></center>
+        <h4>About</h4>
+        <p>Using the Fenix Botnet to break into specific networks and steal vital data, a
+            cybercrime organisation located in Mexico has targeted tax-paying people in
+            Mexico and Chile. They then turn the material over to more experienced actor
+            groups. As part of their initial infection technique, they clone legitimate portals
+            using HTTrack Website Copier/3.x and drive potential victims there.</p>
+            <h4>What happened :</h4>
+            <p>According to the cybersecurity company with a focus on Latin America, Fenix&#39;s
+                objective is to function as an initial access broker, gain access to various
+                businesses in the area, and then sell that access to ransomware affiliates for
+                further profit.
+                According to the evidence so far, the threat actor has been planning phishing
+                efforts to coincide with official events since at least the fourth quarter of 2022.</p>
+                <h4>How it happened :</h4>
+                <p>A cybercrime organisation operating out of Mexico by the name of Fenix has
+                    targeted tax-paying citizens in Mexico and Chile in order to hack into targeted
+                    networks and steal vital data.
+                    
+                    Cloning the official websites of the Servicio de Administración Tributaria (SAT)
+                    in Mexico and the Servicio de Impuestos Internos (SII) in Chile and guiding
+                    potential victims to those sites is a significant aspect of the operation.
+                    Researchers from Metabase Q, Gerardo Corona and Julio Vidal, described the
+                    bogus websites as "prompting users to download a supposed security tool,
+                    claiming it will enhance their portal navigation safety,"" in a recent analysis.
+                    But unbeknownst to the victims, this download really sets up the first stage of
+                    malware, making it possible to steal important data like credentials.
+                    The campaign's mechanics work as follows: Users who land on the fake
+                    websites are encouraged to download software that is said to protect personal
+                    data as they browse the portal. As an alternative, people are tricked into
+                    downloading safe programmes like AnyDesk via phishing websites.
+                    The researchers stated that "[Fenix] compromises weak websites using
+                    vulnerable WordPress engines and also creates new domains to launch
+                    phishing campaigns,"" adding that the gang "creates typosquatting domains
+                    similar to known apps like AnyDesk, WhatsApp, etc.""
+                    A.NET binary is then loaded and executed, and the message "Ahora se
+                    encuentra protegido" (which translates to "Now you are protected" in Spanish)
+                    is then displayed to maintain the ruse. However, the ZIP file containing the
+                    supposedly malicious software is actually used as a springboard to activate an
+                    infection sequence. This infection sequence then leads to the execution of an
+                    obscured PowerShell script.
+                    The.NET executable then opens the door for establishing persistence on the
+                    infected host and deploying a botnet malware that can execute commands
+                    from a remote server, load a stealer module that exfiltrates login information
+                    from web browsers and cryptocurrency wallets, and eventually delete itself.
+                    "We are seeing new malicious groups being created in LATAM to provide initial
+                    access to ransomware gangs,"" the researchers concluded. "These local actors
+                    are not amateur and will increase their technical expertise and therefore more
+                    difficult to track, detect and eradicate, it is important to anticipate their
+                    actions."</p>
+                    <h4>Remediations :</h4>
+                    <p>Verify the Domain: To prevent typosquatting , thoroughly check the spelling,
+                        use of URL shorteners, and legitimacy of website domains. Use web resources,
+                        
+                        verify domain ownership information, and proceed with caution if you come
+                        across phishing efforts or strange domain extensions.
+                        When installing third-party applications, use caution: Rely on reliable sources,
+                        and carefully examine app permissions. Apps that are not authorised or have
+                        not been thoroughly reviewed may access your data, jeopardising your
+                        security.
+                        Improve Intrusion Detection Systems: Put in place strong intrusion detection
+                        systems that can quickly detect and react to.NET binaries and obfuscated
+                        PowerShell scripts. This improvement will greatly increase your capacity to
+                        recognise threats and successfully counter them.</p>
+    </body>
+</html>
